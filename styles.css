@@ -16,14 +16,23 @@ body {
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: wheat;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  font-size: 2rem;
+}
+.container {
+  max-width: 1440px;
 }
 
 .pageTitle {
   text-align: center;
   font-size: 3rem;
+}
+.colorGenerator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .colorSchemeWrapper {
@@ -40,73 +49,107 @@ body {
 }
 
 /* Top Portion */
-
 .topPortion {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  padding: 1.5rem;
+  padding: 0 4rem;
   width: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1;
 }
 .topItem {
-  height: 42px;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#colorWheel {
+  height: 4rem;
 }
 
 #colorTheme {
+  text-align: center;
   padding: 1rem;
-  width: 312px;
-  height: 100%;
+  font-size: 1.6rem;
 }
 #generateColors {
-  width: 123px;
-  height: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: #808080;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .topPortion {
+    flex-direction: row;
+    width: 70rem;
+  }
+  .topItem {
+    margin: 0.5rem 2rem;
+  }
+  #colorWheel {
+    width: 9rem;
+  }
 }
 
-#colorWheel {
-  width: 51px;
-  height: 100%;
-  border: 0;
+.colorFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 /* Middle Portion */
 
-.middlePortion {
+.colorVisual {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
   height: 550px;
-  background: red;
+  width: 100%;
+}
+.colorLabels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.4rem;
 }
 .color {
-  background: yellow;
-  height: 55rem;
+  padding: 2.4rem 0;
   width: 110px;
   font-size: 1.2rem;
+  margin: 3rem;
+  border-radius: 5%;
+  border: 2px solid silver;
 }
-
-#color1 {
-  height: 100%;
-}
-#color2 {
-  height: 100%;
-}
-#color3 {
-  height: 100%;
-}
-#color4 {
-  height: 100%;
-}
-#color5 {
-  height: 100%;
+.colorLabel {
+  background: silver;
+  margin: 3rem 3rem;
+  padding: 1rem 3rem;
+  border-radius: 10%;
 }
 
 /* Bottom Portion */
 
-.bottomPortion {
-  padding: 3rem;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  font-size: 1.4rem;
+@media screen and (min-width: 768px) {
+  .color {
+    height: 50rem;
+    border-radius: 2%;
+  }
+  .colorFlex {
+    flex-direction: column;
+  }
+  .colorLabels {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 2.8rem;
+  }
+  .colorVisual {
+    flex-direction: row;
+  }
+  .colorLabel {
+    padding: 0.8rem 2rem;
+  }
 }

@@ -8,10 +8,10 @@ let colorArray = []
 
 function renderColor() {
     colorHtml = colorArray.map(color =>{
-        return `<div class=color style="background:${color}"></div>`
+        return `<div class=color id="${color}" style="background:${color}"></div>`
     }).join(``)
     colorLabelHtml = colorArray.map(color =>{
-        return `<div>${color}</div>`
+        return `<label for="${color}" class="colorLabel">${color}</label>`
     }).join(``)
     colorContainer.innerHTML = colorHtml
     colorLabels.innerHTML = colorLabelHtml

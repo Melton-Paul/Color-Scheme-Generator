@@ -11,18 +11,26 @@
     <h1 class="pageTitle">Generate Your Color Scheme</h1>
     <div class="colorSchemeWrapper">
         <div class="topPortion">
-                <div class="topItem"><input class="colorWheel" type="color"></div>
                 <div class="topItem">
-                    <select name="" id="colorSelector">
-                        <option value="monochrome">Monochrome</option>
-                        <option value=""></option>
+                    <input id="colorWheel"  type="color" value="#F55A5A">
+                </div>
+                <div class="topItem">
+                    <select name="colorTheme" id="colorTheme">
+                        <option for="colorTheme" value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-Dark</option>
+                        <option value="monochrome-light">Monochrome-Light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
                     </select>
                 </div>
                 <div class="topItem">
                     <button id="generateColors">Get color scheme</button>
                 </div>
             </div>
-        <div class="middlePortion">
+        <div id="colorContainer" class="middlePortion">
             <div class="color">
                 <div id="color1"></div>
             </div>
@@ -48,5 +56,6 @@
         </div>
         
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@ body {
   height: 42px;
 }
 
-#colorSelector {
+#colorTheme {
   padding: 1rem;
   width: 312px;
   height: 100%;
@@ -64,7 +64,7 @@ body {
   height: 100%;
 }
 
-.colorWheel {
+#colorWheel {
   width: 51px;
   height: 100%;
   border: 0;
@@ -87,7 +87,18 @@ body {
 
 #color1 {
   height: 100%;
-  background: red;
+}
+#color2 {
+  height: 100%;
+}
+#color3 {
+  height: 100%;
+}
+#color4 {
+  height: 100%;
+}
+#color5 {
+  height: 100%;
 }
 
 /* Bottom Portion */
